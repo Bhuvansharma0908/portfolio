@@ -1,0 +1,95 @@
+* {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+#fullproject {
+    height: 2000px;
+    width: 100vw;
+    background: url(/portfolio/photos/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+#firstpage {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#myphoto {
+    position: absolute;
+    background-image: url('/portfolio/photos/myphoto.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    top: 50px;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+#typedtext {
+    position: absolute;
+    font-size: 50px;
+    top: 55%;
+    font-family: cursive;
+    color: white;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+#linkedin {
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 20px;
+    top: 85%;
+    left: 40%;
+}
+
+#linkedin img {
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+#gmail {
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 20px;
+    top: 85%;
+    left: 50%;
+}
+
+#gmail img {
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+#resume {
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 20px;
+    top: 85%;
+    left: 60%;
+}
+
+#resume img {
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #eec717, 0 0 40px #eec717, 0 0 50px #eec717;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #eec717, 0 0 40px #eec717, 0 0 50px #eec717, 0 0 60px #eec717;
+    }
+}
