@@ -4,11 +4,12 @@
 }
 
 #fullproject {
-    height: 2000px;
+    height: 500vh;
     width: 100vw;
     background: url(/portfolio/photos/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    border: 2px solid red;
     background-size: 100% 100%;
     background-attachment: fixed;
 }
@@ -91,5 +92,87 @@
     }
     to {
         text-shadow: 0 0 20px #fff, 0 0 30px #eec717, 0 0 40px #eec717, 0 0 50px #eec717, 0 0 60px #eec717;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #fullproject {
+        width: 100vw;
+        height: 230vh;
+        border: 2px solid red;
+        background: url(/portfolio/photos/background.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    #firstpage {
+        height: 70vh;
+        width: 100vw;
+        border: 2px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+    #myphoto {
+        position: absolute;
+        background-image: url('/portfolio/photos/myphoto.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        top: 10%;
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+    }
+    #typedtext {
+        position: absolute;
+        font-size: 1.5rem;
+        top: 40%;
+        font-family: cursive;
+        color: white;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+    #linkedin {
+        position: absolute;
+        border: 2px solid white;
+        border-radius: 20px;
+        top: 55%;
+        left: 30%;
+    }
+    #linkedin img {
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+    #gmail {
+        position: absolute;
+        border: 2px solid white;
+        border-radius: 20px;
+        top: 55%;
+        left: 50%;
+    }
+    #gmail img {
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+    #resume {
+        position: absolute;
+        border: 2px solid white;
+        border-radius: 20px;
+        top: 55%;
+        left: 70%;
+    }
+    #resume img {
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #eec717, 0 0 40px #eec717, 0 0 50px #eec717;
+        }
+        to {
+            text-shadow: 0 0 20px #fff, 0 0 30px #eec717, 0 0 40px #eec717, 0 0 50px #eec717, 0 0 60px #eec717;
+        }
     }
 }
