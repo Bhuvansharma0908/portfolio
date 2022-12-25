@@ -1,5 +1,5 @@
 #secondpage {
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
 }
 
@@ -40,4 +40,47 @@
 #frame.active {
     transform: translateY(0);
     opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+    #secondpage {
+        height: 60vh;
+        width: 100vw;
+        border: 2px solid red;
+    }
+    #frame {
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: 1s all ease;
+        height: 50vh;
+        width: 70vw;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #secondpage h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: bold;
+        margin-top: 20px;
+        font-size: 2rem;
+        color: white;
+    }
+    #secondpage p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 40px;
+    }
+    #frame.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
