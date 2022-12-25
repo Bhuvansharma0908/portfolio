@@ -1,5 +1,5 @@
 #thirdpage {
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
 }
 
@@ -137,5 +137,136 @@
     }
     100% {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #thirdpage {
+        height: 90vh;
+        width: 100vw;
+    }
+    #frame2 {
+        transform: translateY(150px);
+        opacity: 0;
+        transition: 1s all ease;
+        height: 80vh;
+        width: 70vw;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    #frame2.active2 {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    #thirdpage h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: bold;
+        margin-top: 20px;
+        font-size: 2rem;
+        color: white;
+    }
+    #prog1 {
+        display: flex;
+    }
+    #prog2 {
+        display: flex;
+    }
+    #prog3 {
+        display: flex;
+    }
+    #prog4 {
+        display: flex;
+    }
+    #thirdpage h2 {
+        color: white;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    .progress {
+        height: 100px;
+        position: relative;
+        top: 15%;
+        left: 10%;
+        width: 17rem;
+    }
+    .progress-value1 {
+        display: flex;
+        margin: 1rem;
+        animation: load 5s normal forwards;
+        box-shadow: 0 10px 40px -10px #fff;
+        border-radius: 50px;
+        background: #fff;
+        height: 1rem;
+        width: 0;
+    }
+    .progress-value2 {
+        display: block;
+        margin: 1rem;
+        animation: load2 5s normal forwards;
+        box-shadow: 0 10px 40px -10px #fff;
+        border-radius: 50px;
+        background: #fff;
+        background: #fff;
+        height: 1rem;
+        width: 0;
+    }
+    .progress-value3 {
+        display: block;
+        margin: 1rem;
+        animation: load3 5s normal forwards;
+        box-shadow: 0 10px 40px -10px #fff;
+        border-radius: 50px;
+        background: #fff;
+        background: #fff;
+        height: 1rem;
+        width: 0;
+    }
+    .progress-value4 {
+        display: block;
+        margin: 1rem;
+        animation: load4 5s normal forwards;
+        box-shadow: 0 10px 40px -10px #fff;
+        border-radius: 50px;
+        background: #fff;
+        background: #fff;
+        height: 1rem;
+        width: 0;
+    }
+    @keyframes load {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 60%;
+        }
+    }
+    @keyframes load2 {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 70%;
+        }
+    }
+    @keyframes load3 {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    @keyframes load4 {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 100%;
+        }
     }
 }
